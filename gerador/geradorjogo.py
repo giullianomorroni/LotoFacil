@@ -37,16 +37,16 @@ class GeradorJogo(object):
 
         return jogo;
 
-    def randomico_com_melhores_repeticoes(self, analisador, repeticoes=7):
+    def randomico_com_melhores_repeticoes(self, pergunta, repeticoes=7):
         jogo = deque()
-        bolas = analisador.melhor_repeticao_numeros(repeticoes);
+        bolas = pergunta.repeticao_numeros(repeticoes);
         for melhores in bolas:
             jogo.append(melhores)
         return jogo;
 
-    def randomico_com_melhores_colunas(self, analisador, coluna=2):
+    def randomico_com_melhores_colunas(self, pergunta, coluna=2):
         jogo = deque()
-        bolas = analisador.melhor_repeticao_numeros_por_coluna(coluna);
+        bolas = pergunta.repeticao_numeros_coluna(coluna);
         for melhores in bolas:
             jogo.append(melhores)
         return jogo;
@@ -69,5 +69,5 @@ class GeradorJogo(object):
 
             jogo = self.completar_jogo(jogo);
             sorted(jogo)
-            p = analisador.analisar_percentual_chance_jogo(jogo)
+            p = analisador.analisar_percentual_jogo(jogo)
         return jogo;

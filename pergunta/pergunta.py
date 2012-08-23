@@ -19,9 +19,21 @@ class pergunta(object):
         r = consulta().consulta_ano_mes(mes, ano);
         cnt = Counter();
         for bolas in r:
-            for bola in bolas:
-                cnt[bola] +=1
+            cnt += Counter(bolas);
         return cnt.most_common(quantidade)
+
+    def repeticao_numeros_para_sequencia(self, sequencia={1,2,3,4,5}, mes=1, ano=1990):
+        r = consulta().consulta_ano_mes(mes, ano);
+        cnt = Counter();
+        ok = 0;
+        for bolas in r:
+            ok = 0;
+            for bola in bolas:
+                if bola in sequencia:
+                    ok += 1;
+            if ok >= len(sequencia):
+                cnt += Counter(bolas[len(sequencia): len(bolas)]);
+        return cnt.most_common(30)
 
     def repeticao_numeros_coluna(self, coluna, mes=1, ano=1990):
         r = consulta().consulta_ano_mes(mes, ano)
@@ -52,7 +64,7 @@ class pergunta(object):
                 return [x for x in cnt if x in self.c5]            
         return cnt
 
-    def repeticao_colunas(self, coluna, mes=1, ano=1990):
+    def repeticao_colunas(self, mes=1, ano=1990):
         r = consulta().consulta_ano_mes(mes, ano)
         cnt = Counter();
         for bolas in r:
@@ -65,6 +77,6 @@ class pergunta(object):
                     cnt['coluna 3'] +=1
                 if bola >= 16 and bola <= 20:
                     cnt['coluna 4'] +=1
-                if bola >= 21 and bola <= 20:
+                if bola >= 21 and bola <= 25:
                     cnt['coluna 5'] +=1
         return cnt

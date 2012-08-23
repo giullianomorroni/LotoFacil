@@ -1,9 +1,19 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from leitura.leitor import leitor
-from analise.analisador import analisador
-from gerador.geradorjogo import GeradorJogo
+import sys
+
+sys.path.append('/media/Desenvolvimento/workspace/python/LotoFacil/analise/')
+sys.path.append('/media/Desenvolvimento/workspace/python/LotoFacil/base_dados/')
+sys.path.append('/media/Desenvolvimento/workspace/python/LotoFacil/leitura/')
+sys.path.append('/media/Desenvolvimento/workspace/python/LotoFacil/pergunta/')
+sys.path.append('/media/Desenvolvimento/workspace/python/LotoFacil/gerador/')
+
+print sys.path
+
+#from leitura.leitor import leitor
+#from analise.analisador import analisador
+#from gerador.geradorjogo import GeradorJogo
 
 #A tabela ja esta criada
 #l = leitor()
@@ -19,8 +29,8 @@ from gerador.geradorjogo import GeradorJogo
 #a.analisar_jogo([18,20,25,23,10,11,24,14,6,2,13,9,5,16,3,5])
 #a.coluna_com_mais_repeticao()
 
-g = GeradorJogo()
-a = analisador()
+#g = GeradorJogo()
+#a = analisador()
 
 #jogo1 = g.randomico()
 #print jogo1
@@ -29,5 +39,5 @@ a = analisador()
 #print jogo2
 #a.analisar_percentual_chance_jogo(jogo2)
 
-jogo3 = g.jogo_com_percentual_de(a, 60)
-print jogo3
+#jogo3 = g.jogo_com_percentual_de(a, 50)
+#print jogo3
