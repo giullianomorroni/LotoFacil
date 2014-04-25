@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Colorful Flat by tB3</title>
+    <title>LEasy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="site com dados sobre a loto fácil">
+    <meta name="author" content="Giulliano Morroni">
 	<link id="callCss" rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8" />
 
 	<link id="callCss"rel="stylesheet" href="/static/css/style.css" type="text/css" media="screen" charset="utf-8" />
-	<link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="/static/##########/css/bootstrap-responsive.min.css" rel="stylesheet">
 
 </head>
 
@@ -23,9 +23,9 @@
             
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li><a href="#ourServices">Estou com sorte?</a></li>
+                    <li><a href="#ourServices" id="estouComSorteLink">Estou com sorte?</a></li>
                     <li><a href="#portfolioSection">Complete meu Jogo</a></li>
-                    <li><a href="#recentpostSection">Análise</a></li>
+                    <li><a href="#recentpostSection">Analisador</a></li>
                     <li><a href="#blogSection">Compartilhe</a></li>
                     <li><a href="#meetourteamSection">Desenvolvedores</a></li>
                 </ul>
@@ -63,39 +63,27 @@
 <!-- Sectionone block ends======================================== -->
  
 
-<!-- Our Services======================================== -->
+<!-- Estou com sorte ======================================== -->
 <div id="ourServices">  
-<div class="container"> 
-                <div class="row">
-                
-                <div class="row-fluid">
-      <div class="span4">
-      
-      <div class="info-img">
-        <img src="/static/img/img-1.png" ></div>
-        <h4>Flat Design</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere. </p>
-      </div>
-      <div class="span4">
-        <div class="info-img"><img src="/static/img/img-2.png" ></div>
-        <h4>Great Ideas</h4>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere. </p>
-      </div>
-      <div class="span4">
-        <div class="info-img"><img src="/static/img/img-3.png" ></div>
-        <h4>Browser  Compatibility</h4>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere. </p>
-      </div>
-    </div>
-        
-        
-        
-        
-        
-        
+	<div class="container"> 
+		<div class="row">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="info-img">
+						<img src="/static/img/maquiavel.jpg" ></div>
+						
+						 para que o nosso livre arbítrio não seja extinto, 
+						 julgo poder ser verdade que a sorte seja o árbitro da 
+						 metade das nossas ações, mas que ainda nos deixe governar 
+						 a outra metade, ou quase. <h4>"Nicolau Maquiavel"</h4>
+						<span id="luckNumbers">  </span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
 </div>
-</div>
-</div>
+
 
 <!-- Our Portfolio======================================== -->
 <div id="portfolioSection">
@@ -526,30 +514,18 @@
 <script src="/static/js/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script>
 <script src="/static/js/jquery.easing-1.3.min.js"></script>
 <script src="/static/js/default.js"></script>
+<script src="/static/js/main.js"></script>
 
 <script type="text/javascript">
 
 	$(document).ready(function() {
 	$('#myCarousel').carousel({
-	  interval: 7000
+	  interval: 70000
 	});
 	
 	});
-	
-	
-	
-	
  
 </script>
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
