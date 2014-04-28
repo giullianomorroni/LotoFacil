@@ -52,4 +52,4 @@ def server_static(filepath):
     return static_file(filepath, root='/Development/LotoFacil/views/bootstrap/')
     #return static_file(filepath, root='/opt/development/workspace/python/LotoFacil/views/bootstrap/')
 
-run(host='localhost', port=8080)
+run(host='localhost', port=9200)
