@@ -10,6 +10,12 @@ import sys
 
 class analisador(object):
 
+    c1 = [21,22,23,24,25]
+    c2 = [16,17,18,19,20]
+    c3 = [11,12,13,14,15]
+    c4 = [6,7,8,9,10]
+    c5 = [1,2,3,4,5]
+ 
     def analisar_probabilidade_jogo(self, jogo):
         jogo_repetido = 0;
         r = consulta().consulta_ano_mes()

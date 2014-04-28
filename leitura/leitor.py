@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
-from pysqlite2 import dbapi2 as sqlite
+from sqlite3 import dbapi2 as sqlite
 from collections import deque
 
 #Esta classe serve para ler o resultado e armazenar na base
@@ -10,13 +10,14 @@ class leitor:
     global repeticoesNumero;
 
     def __init__(self):
-        self.con = sqlite.connect('/opt/lotofacil/sqlite/lotofacil')
+        self.con = sqlite.connect('/opt/development/sqlite/lotofacil')
+        #self.con = sqlite.connect('/opt/lotofacil/sqlite/lotofacil')
 
     def commit(self):
         self.con.commit()
 
     def extrair_dados(self):
-        resultados = open('/opt/lotofacil/sqlite/resultados.txt')
+        resultados = open('/opt/development/sqlite/resultados.txt')
         while (True):
             linha = resultados.readline();
             if len(linha) == 0: break;
@@ -43,11 +44,11 @@ class leitor:
         dia = data.split('/')[0]
         mes = data.split('/')[1]
         ano = data.split('/')[2]
-        ganhadores_15 = r[17]
-        ganhadores_14 = r[18]	
-        ganhadores_13 = r[19]
-        ganhadores_12 = r[20]
-        ganhadores_11 = r[21]
+        ganhadores_15 = r[18]
+        ganhadores_14 = r[19]
+        ganhadores_13 = r[20]
+        ganhadores_12 = r[21]
+        ganhadores_11 = r[22]
 
         bolas_ordenadas = deque();
         for bola in range(2, 17):

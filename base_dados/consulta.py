@@ -4,12 +4,13 @@ Created on 14/08/2012
 @author: giulliano
 '''
 
-from pysqlite2 import dbapi2 as sqlite
+from sqlite3 import dbapi2 as sqlite
 
 class consulta(object):
 
     def __init__(self):
-        self.con = sqlite.connect('/opt/lotofacil/sqlite/lotofacil')
+        self.con = sqlite.connect('/opt/development/sqlite/lotofacil')
+        #self.con = sqlite.connect('/opt/lotofacil/sqlite/lotofacil')
 
     def consulta_ano_mes(self, mes=1, ano=1990):
         r = self.con.execute('select bola_1, bola_2, bola_3,' + 
