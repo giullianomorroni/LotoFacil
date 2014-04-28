@@ -7,12 +7,14 @@ from collections import deque
 #Esta classe serve para ler o resultado e armazenar na base
 class leitor:
 
+    global database;
     global repeticoesNumero;
 
     def __init__(self):
-        self.con = sqlite.connect('/opt/development/sqlite/lotofacil')
-        #self.con = sqlite.connect('/opt/lotofacil/sqlite/lotofacil')
-
+        database = '/Development/sqlite/lotofacil';
+        #database = '/opt/lotofacil/sqlite/lotofacil'
+        self.con = sqlite.connect(database)
+        
     def commit(self):
         self.con.commit()
 
@@ -26,9 +28,9 @@ class leitor:
 
     def drop_table(self):
         try:
-            os.remove('/opt/lotofacil/sqlite/lotofacil')
+            os.remove(database)
         except Exception:
-            print 'A tabela nao existe'      
+            print ('A tabela nao existe')      
 
     def create_table(self):
         self.con.execute(

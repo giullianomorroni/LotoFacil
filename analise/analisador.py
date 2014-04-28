@@ -22,7 +22,7 @@ class analisador(object):
         cnt = Counter();
         for bolas in r:
             if (jogo_repetido == 15):
-                print 'Este jogo ja foi sorteado %s !!!!!' %bolas
+                print ('Este jogo ja foi sorteado '+bolas+' !!!!!') 
                 sys.exit(-1);
             jogo_repetido = 0;
           
@@ -50,5 +50,5 @@ class analisador(object):
         if por_coluna == True:
             bom_jogo = (bom_jogo + (33))
 
-        print 'Seu jogo possuim um percentual de acerto de %s ' %bom_jogo
+        print ("Seu jogo possuim um percentual de acerto de "+str(bom_jogo))
         return bom_jogo;

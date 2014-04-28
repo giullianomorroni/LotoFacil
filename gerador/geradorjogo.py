@@ -51,14 +51,14 @@ class GeradorJogo(object):
             jogo.append(melhores)
         return jogo;
 
-    def jogo_com_percentual_de(self, analisador, percentual):
+    def jogo_com_percentual_de(self, analisador, pergunta, percentual):
         p = 0
         while (p < percentual):
             jogo = deque()
             x = int(uniform(1,5))
             ca = int(uniform(1,5))
-            jogo1 = self.randomico_com_melhores_repeticoes(analisador, x)
-            jogo2 = self.randomico_com_melhores_colunas(analisador, ca)
+            jogo1 = self.randomico_com_melhores_repeticoes(pergunta, x)
+            jogo2 = self.randomico_com_melhores_colunas(pergunta, ca)
 
             aux = [j for j in jogo1]
             aux += [j for j in jogo2]
@@ -69,5 +69,5 @@ class GeradorJogo(object):
 
             jogo = self.completar_jogo(jogo);
             sorted(jogo)
-            p = analisador.analisar_percentual_jogo(jogo)
+            p = analisador.analisar_probabilidade_jogo(jogo)
         return jogo;
