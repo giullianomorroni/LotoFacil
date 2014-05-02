@@ -18,7 +18,7 @@ class GeradorJogo(object):
             bola = int(uniform(1,25))
             if bola not in jogo:
                 jogo.append(bola)
-        return jogo;
+        return sorted(list(jogo));
 
     def completar_jogo(self, jogo):
         if len(jogo) == 15:

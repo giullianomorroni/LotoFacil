@@ -15,8 +15,13 @@ $("#estouComSorteLink").click(function(event){
 });
 
 function showLuckNumbers(data) {
-	$("#luckNumbers").html(data['magic_numbers']);
-    $("#luckPercent").html(data['percent']);
+    mg = data['magic_numbers'];
+    numbers = '';
+    for (m in mg){
+        dv = '<div class="numbers">'+mg[m]+'</div>'
+        $("#luckNumbers").append(dv);
+    }
+    $("#luckPercent").html('<h4> Probabilidade de Acerto: ' + data['percent'] + ' % <h4>');
 }
 
 function showOrderNumbers(data){
