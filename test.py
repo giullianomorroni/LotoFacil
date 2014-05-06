@@ -2,22 +2,22 @@ import sys
 
 sys.path.append('analise/')
 sys.path.append('base_dados/')
-sys.path.append('leitura/')
+sys.path.append('importador/')
 sys.path.append('pergunta/')
 sys.path.append('gerador/')
 
 #print (sys.path)
 
-from leitura.leitor import leitor
+from importador.importador import importador
 from analise.analisador import analisador
 from gerador.geradorjogo import GeradorJogo
 from pergunta.pergunta import pergunta
 
 #A tabela ja esta criada
 #l = leitor()
-#l.drop_table()
-#l.create_table()
-#l.extrair_dados()
+#l.apagar_tabelas()
+#l.criar_tabelas()
+#l.gerar_base()
 
 a = analisador()
 g = GeradorJogo()

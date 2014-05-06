@@ -8,7 +8,7 @@ import sys
 
 sys.path.append('analise/')
 sys.path.append('base_dados/')
-sys.path.append('leitura/')
+sys.path.append('importador/')
 sys.path.append('pergunta/')
 sys.path.append('gerador/')
 
