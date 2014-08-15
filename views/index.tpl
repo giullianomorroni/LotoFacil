@@ -10,7 +10,7 @@
 
 	<link id="callCss"rel="stylesheet" href="/static/css/style.css" type="text/css" media="screen" charset="utf-8" />
 	<link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet">
-
+    <link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -68,14 +68,15 @@
 		<div class="row">
 			<div class="row-fluid">
 				<div class="span12">
-					<div class="info-img">
-						<img src="/static/img/maquiavel.jpg" ></div>
-						 para que o nosso livre arbítrio não seja extinto, 
-						 julgo poder ser verdade que a sorte seja o árbitro da 
-						 metade das nossas ações, mas que ainda nos deixe governar 
-						 a outra metade, ou quase. <h4>"Nicolau Maquiavel"</h4>
-						<span id="luckNumbers">  </span>
-						<span id="luckPercent">  </span>
+                    <h3 style="font-family: 'Coming Soon', cursive;">
+                     para que o nosso livre arbítrio não seja extinto, 
+                     julgo poder ser verdade que a SORTE seja o árbitro da 
+                     metade das nossas ações, mas que ainda nos deixe governar 
+                     a outra metade, ou quase. 
+                    </h3>
+                     <h4>"Nicolau Maquiavel"</h4>
+                    <span id="luckNumbers">  </span>
+                    <span id="luckPercent">  </span>
 					</div>
 				</div>
 			</div>
