@@ -15,18 +15,37 @@ $("#estouComSorteLink").click(function(event){
 });
 
 function showLuckNumbers(data) {
+    $("#luckNumbers").empty();
+    $("#luckPercent").empty();
+    
     mg = data['magic_numbers'];
     numbers = '';
     for (m in mg){
-        dv = '<div class="numbers">'+mg[m]+'</div>'
+        num = mg[m];
+        if (num < 10){
+            num = '0'+num;
+        }
+        dv = '<div class="luck_numbers">'+num+'</div>'
         $("#luckNumbers").append(dv);
     }
     $("#luckPercent").html('<h4> Probabilidade de Acerto: ' + data['percent'] + ' % <h4>');
 }
 
 function showOrderNumbers(data){
-    $("#orderNumbers").html(data['magic_numbers']);
-    $("#orderPercent").html(data['percent']);
+    $("#orderNumbers").empty();
+    $("#orderPercent").empty();
+    
+    mg = data['magic_numbers'];
+    numbers = '';
+    for (m in mg){
+        num = mg[m];
+        if (num < 10){
+            num = '0'+num;
+        }
+        dv = '<div class="numbers">'+num+'</div>'
+        $("#orderNumbers").append(dv);
+    }
+    $("#orderPercent").html('<h4> Probabilidade de Acerto: ' + data['percent'] + ' % <h4>');
 }
 
 function order(method){

@@ -91,7 +91,7 @@
 <div id="portfolioSection">
     <div class="span6" style="width:100%">
         <h1 class="cntr">O Melhor Jogo</h1>
-        <p>Como você prefere que seu jogo seja montado ? Aqui é a pastelaria do bons números, é só pedir. </p>
+        <p style="font-size: xx-large; margin-bottom: 20px;">Como prefere seu jogo? Aqui é a pastelaria do bons números, é só pedir. </p>
     </div>
     <div class="container"> 
         <div class="clr"></div>
@@ -101,36 +101,42 @@
                     <ul class="thumbnails">
                         <li class="span4">
                             <div>
-                                <h3> As melhores repetições </h3>
-                                <button onclick="order('melhores_repeticoes');" >aqui</button>
+                                <button type="button" class="btn btn-default btn-lg" onclick="order('melhores_repeticoes');">
+                                <h3> melhores repetições </h3>
+                                </button>
                             </div>
                         </li>
                         <li class="span4">
                             <div>
-                                <h3>As melhores colunas</h3>
-								<button onclick="order('melhores_colunas');" >aqui</button>
+								<button type="button" class="btn btn-default btn-lg" onclick="order('melhores_colunas');" >
+                                <h3>melhores colunas</h3>
+								</button>
                             </div>
                         </li>
                         <li class="span4">
                             <div>
-                                <h3>Com percentual de acerto</h3>
-								<button onclick="order('percentual');" >aqui</button>
+								<button type="button" class="btn btn-default btn-lg" onclick="order('percentual');" >
+                                <h3>percentual de acerto</h3>
+								</button>
                             </div>
                         </li>
                         <li class="span4">
                             <div>
-                                <h3>Complete meu jogo</h3>
-								<button onclick="order('complete');" >aqui</button>
+								<button type="button" class="btn btn-default btn-lg" onclick="order('complete');" >
+                                <h3>complete meu jogo</h3>
+								</button>
                             </div>
                         </li>
                         <li class="span4">
                             <div>
-                                <h3>Números aletórios</h3>
-								<button onclick="order('randomico');" >aqui</button>
+								<button type="button" class="btn btn-default btn-lg" onclick="order('randomico');" >
+                                <h3>números aletórios</h3>
+								</button>
                             </div>
                         </li>
                     </ul>
                     <span id="orderNumbers">  </span>
+                    <div style="margin-top: 50px;"></div>
                     <span id="orderPercent">  </span>
                 </div>
             </div>

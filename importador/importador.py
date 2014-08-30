@@ -12,8 +12,8 @@ class importador:
     global repeticoesNumero;
 
     def __init__(self):
-        database = '/Development/sqlite/lotofacil';
-        #database = '/opt/lotofacil/sqlite/lotofacil'
+        #database = '/Development/sqlite/lotofacil';
+        database = '/opt/lotofacil/sqlite/lotofacil'
         self.con = sqlite.connect(database)
         
     def commit(self):

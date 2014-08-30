@@ -11,8 +11,8 @@ class consulta(object):
     global database;
 
     def __init__(self):
-        database = '/Development/sqlite/lotofacil';
-        #database = '/opt/lotofacil/sqlite/lotofacil'
+        #database = '/Development/sqlite/lotofacil';
+        database = '/opt/lotofacil/sqlite/lotofacil'
         self.con = sqlite.connect(database)
 
     def consulta_ano_mes(self, mes=1, ano=1990):

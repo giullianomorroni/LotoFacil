@@ -207,7 +207,6 @@ height: 2px;
     border: none;
 }
 
-
 .numbers {
     border:2px solid;
     border-radius:25px;
@@ -218,8 +217,20 @@ height: 2px;
     display:inline;
     padding: 10px;
     margin: 10px;
+    background-color: white;
 }
 
+.luck_numbers {
+    border:2px solid;
+    border-radius:25px;
+    box-shadow: 10px 10px 5px #888888;
+    min-width: 50px;
+    min-height: 50px;
+    font-size: x-large;
+    display:inline;
+    padding: 10px;
+    margin: 10px;
+}
 
 @media (max-width: 600px){
 #headerSection .btn.btn-navbar {
